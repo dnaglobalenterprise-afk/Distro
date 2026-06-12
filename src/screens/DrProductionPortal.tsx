@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { useGlobalState } from '../context/GlobalState.jsx'
-import KpiCard from '../components/KpiCard.jsx'
-import ChainVisualization from '../components/ChainVisualization.jsx'
-import { PRODUCTS } from '../data/products.js'
+import { useGlobalState } from '../context/GlobalState'
+import KpiCard from '../components/KpiCard'
+import ChainVisualization from '../components/ChainVisualization'
+import { PRODUCTS } from '../data/products'
 
 const DEMAND_30DAY = {
   'fk-single-nat':         576,

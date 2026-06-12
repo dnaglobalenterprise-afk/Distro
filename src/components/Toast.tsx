@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useGlobalState } from '../context/GlobalState.jsx'
+import { useGlobalState } from '../context/GlobalState'
 
 const VARIANT_STYLES = {
   success: { bg: 'var(--green)',  icon: '✓' },

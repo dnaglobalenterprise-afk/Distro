@@ -1,4 +1,4 @@
-import RoleSwitcher from './RoleSwitcher.jsx'
+import RoleSwitcher from './RoleSwitcher'
 
 export default function Topbar({ title, subtitle }) {
   return (

@@ -1,5 +1,5 @@
-import { useGlobalState } from '../context/GlobalState.jsx'
-import OrderCard from '../components/OrderCard.jsx'
+import { useGlobalState } from '../context/GlobalState'
+import OrderCard from '../components/OrderCard'
 
 const PIPELINE_STAGES = [
   { id: 'received',  label: 'Order Received' },

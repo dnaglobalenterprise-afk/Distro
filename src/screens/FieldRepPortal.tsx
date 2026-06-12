@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { useGlobalState } from '../context/GlobalState.jsx'
-import { PRODUCTS } from '../data/products.js'
+import { useGlobalState } from '../context/GlobalState'
+import { PRODUCTS } from '../data/products'
 
 const ACCOUNTS = [
   { id: 'acc-1', name: 'Charlotte Smoke Shop',   city: 'Charlotte, NC',    lastVisit: 3,   lastVisitUnit: 'days',  status: 'ok',   lastOrderAmt: 1240 },

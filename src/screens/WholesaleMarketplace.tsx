@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { useGlobalState } from '../context/GlobalState.jsx'
-import ProductCard from '../components/ProductCard.jsx'
-import { PRODUCTS } from '../data/products.js'
+import { useGlobalState } from '../context/GlobalState'
+import ProductCard from '../components/ProductCard'
+import { PRODUCTS } from '../data/products'
 
 const CATEGORIES = ['All', ...new Set(PRODUCTS.map(p => p.category))]
 const BRANDS = ['All Products', 'Fronto King', 'UP']

@@ -1,4 +1,4 @@
-import { useGlobalState, ROLES } from '../context/GlobalState.jsx'
+import { useGlobalState, ROLES } from '../context/GlobalState'
 
 const ROLE_CONFIG = [
   { role: ROLES.OWNER,      label: 'Owner' },

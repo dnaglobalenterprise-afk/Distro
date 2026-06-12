@@ -1,6 +1,6 @@
-import { useGlobalState } from '../context/GlobalState.jsx'
-import KpiCard from '../components/KpiCard.jsx'
-import TerritoryTile from '../components/TerritoryTile.jsx'
+import { useGlobalState } from '../context/GlobalState'
+import KpiCard from '../components/KpiCard'
+import TerritoryTile from '../components/TerritoryTile'
 
 const PORTAL_COLOR = {
   marketplace: 'var(--lime)',

@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { useGlobalState } from '../context/GlobalState.jsx'
-import InventoryCounter from '../components/InventoryCounter.jsx'
+import { useGlobalState } from '../context/GlobalState'
+import InventoryCounter from '../components/InventoryCounter'
 
 function timeStr(iso) {
   return new Date(iso).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })

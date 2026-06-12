@@ -1,5 +1,5 @@
-import { useGlobalState } from '../context/GlobalState.jsx'
-import { PRODUCTS } from '../data/products.js'
+import { useGlobalState } from '../context/GlobalState'
+import { PRODUCTS } from '../data/products'
 
 const STATUS_NEXT = {
   received: 'in_pick',

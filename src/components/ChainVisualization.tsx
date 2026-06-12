@@ -1,4 +1,4 @@
-import { useGlobalState } from '../context/GlobalState.jsx'
+import { useGlobalState } from '../context/GlobalState'
 
 const NODES = [
   { id: 'dr',          label: 'DR Production',      sublabel: 'Santo Domingo',  color: 'var(--orange)', units: 12400 },
