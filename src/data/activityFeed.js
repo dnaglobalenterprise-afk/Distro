@@ -1,0 +1,43 @@
+// Initial pre-populated activity feed items shown on the Owner Dashboard
+export const INITIAL_ACTIVITY = [
+  {
+    id: 'act-001',
+    type: 'order_placed',
+    timestamp: '2026-06-11T18:42:00Z',
+    actor: 'Swift Wholesale',
+    actorId: 'sw-0041',
+    message: 'Swift Wholesale placed order SO-8821 — FK Whole Leaf Natural × 5 cases, FK 5PK Banana × 3 cases',
+    amount: 2592.00,
+    portal: 'marketplace',
+  },
+  {
+    id: 'act-002',
+    type: 'order_shipped',
+    timestamp: '2026-06-11T16:15:00Z',
+    actor: 'Miami Warehouse',
+    actorId: 'warehouse',
+    message: 'Order SO-8801 shipped to Lone Star Distro — Tracking sent automatically',
+    amount: null,
+    portal: 'warehouse',
+  },
+  {
+    id: 'act-003',
+    type: 'reorder_alert',
+    timestamp: '2026-06-11T14:00:00Z',
+    actor: 'System',
+    actorId: 'system',
+    message: 'REORDER ALERT — FK 5PK Natural (288 units) and FK Whole Leaf Grape (144 units) below reorder threshold',
+    amount: null,
+    portal: 'dr',
+  },
+  {
+    id: 'act-004',
+    type: 'order_placed',
+    timestamp: '2026-06-11T10:30:00Z',
+    actor: 'Texas Gulf Wholesale',
+    actorId: 'sw-0071',
+    message: 'Texas Gulf Wholesale placed order SO-8815 — UP Grabba Whole Leaf × 4 cases, UP Redrose 12G × 2 cases',
+    amount: 2160.00,
+    portal: 'marketplace',
+  },
+];

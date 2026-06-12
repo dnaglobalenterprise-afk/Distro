@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --bg:       #080C10;
+  --surface:  #0F1520;
+  --card:     #141E2C;
+  --card2:    #1A2535;
+  --border:   #1E2D40;
+  --orange:   #F06A28;
+  --orange-d: #C85420;
+  --teal:     #0AABB8;
+  --lime:     #B8F000;
+  --white:    #FFFFFF;
+  --grey1:    #E8EDF2;
+  --grey2:    #8FA3B1;
+  --grey3:    #4A6274;
+  --red:      #E03040;
+  --green:    #1EC760;
+  --amber:    #F5A623;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--grey1);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial Black', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.mono {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Accent bars — 3px top border per portal */
+.accent-orange { border-top: 3px solid var(--orange); }
+.accent-teal   { border-top: 3px solid var(--teal); }
+.accent-lime   { border-top: 3px solid var(--lime); }
+.accent-amber  { border-top: 3px solid var(--amber); }
+.accent-red    { border-top: 3px solid var(--red); }
+
+/* Inventory counter flash animation */
+@keyframes flashRed {
+  0%   { color: var(--red); transform: scale(1.08); }
+  50%  { color: var(--red); transform: scale(1.12); }
+  100% { color: inherit;    transform: scale(1); }
+}
+.flash-decrement {
+  animation: flashRed 0.4s ease-out;
+}
+
+/* Fade-in page transition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter {
+  animation: fadeIn 0.35s ease-out;
+}
+
+/* Slide-in for new activity feed / order cards */
+@keyframes slideInTop {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.slide-in {
+  animation: slideInTop 0.3s ease-out;
+}
+
+/* Orange glow for new warehouse orders */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 8px 2px rgba(240,106,40,0.4); }
+  50%       { box-shadow: 0 0 18px 6px rgba(240,106,40,0.7); }
+}
+.glow-orange {
+  animation: glowPulse 2s ease-in-out infinite;
+}
